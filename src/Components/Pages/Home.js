@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/homeStyle.css'
-import {FaSuitcase} from 'react-icons/fa'
+import {FaSuitcase,FaFacebookF,FaTwitter,FaInstagram} from 'react-icons/fa'
 import Carousel from '../Carousel/Carousel'
 
 
@@ -214,8 +214,124 @@ function Home() {
         </div>
 
 
+        <div className="testimnonials-big-container">
+            <div className="testimonials-container">
+              <div className="testimonials-item">
+                  <h2 >Testimonials</h2>
+                  <br/>
+                  <br/>
+                  <h3 className='left-text'>Few Words From Our Clients</h3>
+                  <br/>
+                  <br/>
+                  <p className='left-text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sint similique error? Velit, voluptatem odit! Porro omnis temporibus doloremque dolore, odio saepe, enim maiores eligendi officiis dolorem quo praesentium magni!</p>
+                  <br/>
+                  <button>Free Consultations</button>
+              </div>
+
+              <div className="testimonials-item">
+                
+              
+                <div className="testimonials-inner-grid-container">
+
+                  <div className="testimonials-inner-grid-item">
+                    <h4>Aalyah Kris</h4>
+                    <br/>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br/>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem harum debitis incidunt impedit, aut earum ut accusamus omnis placeat.</p>
+                  </div>
+
+                  <div className="testimonials-inner-grid-item">
+                  <h4>Aalyah Kris</h4>
+                    <br/>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in, facere doloribus iusto, quis explicabo quo veritatis nulla suscipit ipsam pariatur ea expedita ipsa maxime sed magnam, voluptas dolorem sit!</p>
+                  </div>
+
+                  <div className="testimonials-inner-grid-item">
+                  <h4>Aalyah Kris</h4>
+                    <br/>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem nisi dolor tempora illo porro fugiat expedita ipsam tenetur optio.</p>
+                  </div>
+
+                  <div className="testimonials-inner-grid-item">
+                  <h4>Aalyah Kris</h4>
+                    <br/>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
 
 
+        <div className="footer-container">
+          <div className="footer-items">
+          <img src="https://cdn.worldvectorlogo.com/logos/union-bank-of-india.svg" alt="" width="200" height="90" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, officiis?</p>
+            <br/>
+
+            <FaFacebookF/>
+            <FaTwitter/>
+            <FaInstagram/>
+            
+          </div>
+          <div className="footer-items">
+            <h3>Practice Area</h3><br/>
+
+            <div className='area-footer'>
+
+            <p>Law</p>
+            <p>Law</p>
+            <p>Law</p>
+            <p>Law</p>
+            <p>Law</p>
+            <p>Law</p>
+            </div>
+          </div>
+
+          <div className="footer-items">
+          <h3>Company</h3>
+          <br/>
+          
+            <div className='area-footer'>
+              
+            <p>Law</p>
+            
+            <p>Law</p>
+            
+            <p>Law</p>
+            
+            <p>Law</p>
+            
+            <p>Law</p>
+            </div>
+
+          </div>
+
+          <div className="footer-items">
+          <h3>Address</h3>
+          <br/>
+          
+          <div className='area-footer'>
+              
+            <p>Law</p>
+            
+            <p>Law</p>
+            
+            <p>Law</p>
+            
+           
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>

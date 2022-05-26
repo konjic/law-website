@@ -318,3 +318,98 @@ margin: 10px
     border-radius: 100px ;
     padding: 25px;
 }
+
+
+.testimnonials-big-container{
+    background-color: #002659;
+}
+
+
+.testimonials-container{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+
+    align-items: center;
+
+}
+
+
+.testimonials-item{
+    border: solid 1px sandybrown;
+}
+
+.testimonials-inner-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+
+    
+}
+
+.testimonials-inner-grid-item{
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.testimonials-inner-grid-item h4{
+   float: left;
+}
+.testimonials-inner-grid-item p{
+   text-align: left;
+}
+
+.testimonials-item h2{
+    float: left;
+    color: orange;
+}
+.testimonials-item h3{
+    float: left;
+}
+.testimonials-item button{
+    float: left;
+    width: 25%;
+    background-color: orange;
+    color: white;
+}
+.testimonials-item p{
+    text-align: left;
+}
+
+.left-text{
+    color: white;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+}
+
+.footer-items p{
+    text-align: left;
+}
+.footer-items h3{
+    float: left;
+}
+
+.area-footer{
+    margin-top: 10px;
+}
+
+.area-footer p{
+    margin-top: 10px;
+}
+
+.footer-items:nth-of-type(2){
+    margin-left: 50px;
+}
