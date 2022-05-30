@@ -7,32 +7,32 @@ import Carousel from '../Carousel/Carousel'
 const data = [
   {
   key: 1,
-  nume: "Teodor Meila",
+  nume: "Business Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
   {
   key: 2,
-  nume: "Horia Mihai Iancu",
+  nume: "Family Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
   {
   key: 3,
-  nume: "Horia Mihai Iancu",
+  nume: "Finance Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
   {
   key: 4,
-  nume: "Horia Mihai Iancu",
+  nume: "Criminal Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
   {
   key: 5,
-  nume: "Horia Mihai Iancu",
+  nume: "Real Estate Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
   {
   key: 6,
-  nume: "Horia Mihai Iancu",
+  nume: "Divorce Law",
   text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, iste accusamus. Repudiandae, quo fugiat dolor obcaecati ducimus nisi. Delectus facilis harum reiciendis ut! Temporibus eveniet adipisci neque necessitatibus sapiente nam.",
   },
 ]
@@ -51,7 +51,7 @@ function Home() {
 
           <h1 className="landing-text">  We Are Experts In <br/> Legal Professions</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam quos accusamus tempore enim, culpa unde commodi reprehenderit delectus deserunt iusto sed cupiditate et laborum ipsa adipisci beatae perspiciatis maxime!</p>
-          <button>Find Out More</button>
+          <button className='navbarButton-right'>Find Out More </button>
           </div>
         </div>
 
@@ -62,13 +62,15 @@ function Home() {
 
     <div className='services-area'>
 
-      <h3>services</h3>
+      <h3 className='services-area-header'>SERVICES</h3>
       <h2>Our Practice Area</h2>
 
       <div className="container-services-area">
       {data.map(({ text, nume, key }) => (
           <div className="item-services-area">
-                <FaSuitcase className='icon-services'/>
+                <FaSuitcase className='icon-services' color='orange' size={50} />
+                <br/>
+                <br/>
                 <br/>
                 <h3 
                 key={key}
@@ -77,7 +79,8 @@ function Home() {
                 </h3>    
                   <br/>
                 <p>{text}</p>   
-                <button>Learn More →</button>             
+                {/* <button>Learn More →</button>              */}
+                <a>Learn More →</a>
           
           </div>
           ))}
@@ -93,14 +96,14 @@ function Home() {
               </div>
 
               <div className="why-choose-us-section-item">
-                <h4>Facts</h4> <br/>
-                <h3>Why Choose Us</h3>
+                <h4>Facts</h4> <br/> <br/> 
+                <h3 className='chooseUsHeader'>Why Choose Us?</h3>
               </div>
 
               <div className="why-choose-us-section-item">
                 <div className='why-choose-us-section-inner-grid-container'>
                   <div className='why-choose-us-section-inner-grid-item'>
-                    <i className='icon-why-choose-us' > <FaSuitcase size={30}/> </i>
+                    <i className='icon-why-choose-us' > <FaSuitcase size={30} color={'orange'}/> </i>
                   </div>
                   <div className='why-choose-us-section-inner-grid-item'>
                     <h3>Expert in law</h3>
@@ -108,7 +111,7 @@ function Home() {
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in consectetur obcaecati eveniet. Unde dolor placeat nobis nostrum deserunt exercitationem, laborum quisquam, similique illum nihil, enim pariatur est voluptatum perspiciatis!</p>
                   </div>
                   <div className='why-choose-us-section-inner-grid-item'>
-                  <i className='icon-why-choose-us' > <FaSuitcase size={30}/> </i>
+                  <i className='icon-why-choose-us' > <FaSuitcase size={30} color={'orange'}/> </i>
                   </div>
                   <div className='why-choose-us-section-inner-grid-item'>
                     <h3>Maximum Practice Area</h3>
@@ -116,7 +119,7 @@ function Home() {
                   </div>
                   <div className='why-choose-us-section-inner-grid-item'>
                     
-                  <i className='icon-why-choose-us' > <FaSuitcase size={30}/> </i>
+                  <i className='icon-why-choose-us' > <FaSuitcase size={30} color={'orange'} /> </i>
                   </div>
                   <div className='why-choose-us-section-inner-grid-item'>
                     
@@ -141,7 +144,7 @@ function Home() {
         <br/>
         
           <h3>Lawyers</h3><br/>
-          <h2>Our Exper Lawyers</h2>
+          <h2>Our Expert Lawyers</h2>
           
         </div>
         
@@ -190,13 +193,13 @@ function Home() {
               </div>
 
             <br/>
-            <button>Contact Us</button>
+            <button className='partnerButton'>Contact Us</button>
   </div>
   <div className="rightside"></div>
 </div>
-
-        <h2> Partners</h2>
-        <h3> Clients That We Love Working</h3>
+        
+        <h2 className='headerPartner'> Partners</h2>
+        <h3 className='subheaderPartner'> Clients That We Love Working</h3>
 
         <div className="partners-container">
           <img src="https://cdn.worldvectorlogo.com/logos/union-bank-of-india.svg" alt="" width="200" height="90" />
@@ -236,6 +239,7 @@ function Home() {
                   <div className="testimonials-inner-grid-item">
                     <h4>Aalyah Kris</h4>
                     <br/>
+                    <br/>
                     <p>Lorem ipsum dolor sit.</p>
                     <br/>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem harum debitis incidunt impedit, aut earum ut accusamus omnis placeat.</p>
@@ -243,6 +247,7 @@ function Home() {
 
                   <div className="testimonials-inner-grid-item">
                   <h4>Aalyah Kris</h4>
+                    <br/>
                     <br/>
                     <p>Lorem ipsum dolor sit.</p>
                     <br/>
@@ -252,6 +257,7 @@ function Home() {
                   <div className="testimonials-inner-grid-item">
                   <h4>Aalyah Kris</h4>
                     <br/>
+                    <br/>
                     <p>Lorem ipsum dolor sit.</p>
                     <br/>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem nisi dolor tempora illo porro fugiat expedita ipsam tenetur optio.</p>
@@ -259,6 +265,7 @@ function Home() {
 
                   <div className="testimonials-inner-grid-item">
                   <h4>Aalyah Kris</h4>
+                    <br/>
                     <br/>
                     <p>Lorem ipsum dolor sit.</p>
                     <br/>
@@ -274,13 +281,13 @@ function Home() {
 
         <div className="footer-container">
           <div className="footer-items">
-          <img src="https://cdn.worldvectorlogo.com/logos/union-bank-of-india.svg" alt="" width="200" height="90" />
+          <img src="https://images.squarespace-cdn.com/content/v1/602334ccc83cc72486df6be3/1613162047924-M4ZJZ3N7HCMH4HXSUJ68/TMLF-0101+Brand+Identity_LOGO-black.png" alt="" width="200" height="90" />
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, officiis?</p>
             <br/>
 
-            <FaFacebookF/>
-            <FaTwitter/>
-            <FaInstagram/>
+            <FaFacebookF className='footer-icon'/>
+            <FaTwitter className='footer-icon'/>
+            <FaInstagram className='footer-icon'/>
             
           </div>
           <div className="footer-items">
@@ -288,12 +295,12 @@ function Home() {
 
             <div className='area-footer'>
 
-            <p>Law</p>
-            <p>Law</p>
-            <p>Law</p>
-            <p>Law</p>
-            <p>Law</p>
-            <p>Law</p>
+            <p>Business Law</p>
+            <p>Family Law</p>
+            <p>Finance Law</p>
+            <p>Criminal Law</p>
+            <p>Real Estate Law</p>
+            <p>Divorce Law</p>
             </div>
           </div>
 
@@ -303,15 +310,15 @@ function Home() {
           
             <div className='area-footer'>
               
-            <p>Law</p>
+            <p>About us</p>
             
-            <p>Law</p>
+            <p>Contact us</p>
             
-            <p>Law</p>
+            <p>Career</p>
             
-            <p>Law</p>
+            <p>How to hire us</p>
             
-            <p>Law</p>
+            <p>Law Certification</p>
             </div>
 
           </div>
@@ -322,11 +329,11 @@ function Home() {
           
           <div className='area-footer'>
               
-            <p>Law</p>
+            <p>Wilson street, California</p>
             
-            <p>Law</p>
+            <p>+1-999-999-9999</p>
             
-            <p>Law</p>
+            <p>razvan-burloiu@email.com</p>
             
            
             </div>

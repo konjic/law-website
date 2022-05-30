@@ -21,7 +21,11 @@ li{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 28%;
+
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/602334ccc83cc72486df6be3/1613162047924-M4ZJZ3N7HCMH4HXSUJ68/TMLF-0101+Brand+Identity_LOGO-black.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-links{
@@ -53,12 +57,29 @@ a{
     
 }
 
-button{
-    border: black solid 1px;
+.navbarButton{
+    border: orange  solid 1px;
     background: none;
     font-size: 16px;
     margin-right: 50px;
     width: 15%;
+    height: 50px;
+    border-radius: 80px;
+    color: orange;
+    cursor: pointer;
+}
+
+.navbarButton-right{
+    border: orange  solid 1px;
+    background: none;
+    font-size: 16px;
+    margin-right: 50px;
+    width: 15%;
+    height: 50px;
+    border-radius: 80px;
+    color: white;
+    cursor: pointer;
+    background-color: orange;
 }
 
 .mobile-menu-icon{

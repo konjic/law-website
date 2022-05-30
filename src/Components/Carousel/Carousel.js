@@ -49,7 +49,7 @@ export default function Carousel() {
         title: 'King Deluxe Room',
         description: 'Lorem ipsum dolor sit amet, consectur dolori',
         pricingText: 'USD 150/Day',
-        features: ['Free Wifi', 'Free breakfast', 'Discounted Meals'],
+        features: ['Free Wifi', 'Free breakfast'],
       },
       {
         imageSrc:
@@ -57,12 +57,7 @@ export default function Carousel() {
         title: 'Royal Suite',
         description: 'Lorem ipsum dolor sit amet, consectur dolori',
         pricingText: 'USD 299/Day',
-        features: [
-          'Free Wifi',
-          'Free breakfast',
-          'Discounted Meals',
-          "MacBook for work use (hotel's property)",
-        ],
+        features: ['Free Wifi', 'Free breakfast'],
       },
     ]
     
@@ -70,21 +65,19 @@ export default function Carousel() {
        <div className='content'>
          <div className="carusel-button-container">
 
-          <button onClick={()=>gotoPrev()}>Previous</button>
-          <button onClick={()=>gotoNext()}>Next</button>
+          <button onClick={()=>gotoPrev()} className="carusel-button-container-left">←</button>
+          <button onClick={()=>gotoNext()} className="carusel-button-container-right">→</button>
           </div>
       <Slider {...sliderSettings} arrows={false} ref={customeSlider}>
         {hotelCards.map((card, index) => (
           <div key={index}>
-            <h2>{card.title}</h2>
+            
             <img alt={card.title} src={card.imageSrc} width="100" height="100" />
+            <h4>{card.title}</h4>
+            <br/>
             <p>{card.description}</p>
-            <ul>
-              {card.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-            <button className='btn'>Buy Now</button>
+            
+            
           </div>
         ))}
         
