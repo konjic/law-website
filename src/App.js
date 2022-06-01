@@ -28,6 +28,11 @@ function App() {
             name="description"
             content='wow'
             />
+
+<meta property='og:title' content='Title of the article'/>
+<meta property='og:image' content='//media.example.com/ 1234567.jpg'/>
+<meta property='og:description' content='Description that will show in the preview'/>
+<meta property='og:url' content='//www.example.com/URL of the article'/>
           </Helmet>
           <Routes>
             <Route path='/' element={<Home/>} />
