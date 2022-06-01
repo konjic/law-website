@@ -12,6 +12,7 @@ import Lawyers from './Components/Pages/Lawyers'
 import Practice from './Components/Pages/Practice'
 import WhyChooseUs from './Components/Pages/WhyChooseUs'
 import Reviews from './Components/Pages/Reviews'
+import Helmet from 'react-helmet';
 
 
 function App() {
@@ -20,8 +21,14 @@ function App() {
   return (
       <>
         
-          
         <Navbar/>
+          <Helmet>
+            <title>VERY COOL LAW FIRM WEBSITE</title>
+            <meta 
+            name="description"
+            content='wow'
+            />
+          </Helmet>
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/practice' element={<Practice/>} />
