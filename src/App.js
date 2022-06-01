@@ -28,7 +28,7 @@ function App() {
             name="description"
             content='wow'
             />
-
+<meta name="title" property="og:title" content="[Content title here]"> TEST</meta>
 <meta property='og:title' content='Title of the article'/>
 <meta property='og:image' content='./Media/lawyer_women.png'/>
 <meta property='og:description' content='Description that will show in the preview'/>
