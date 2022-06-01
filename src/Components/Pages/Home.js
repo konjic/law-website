@@ -285,10 +285,13 @@ function Home() {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, officiis?</p>
             <br/>
 
+            <div className="social-icons">
+
             <FaFacebookF className='footer-icon'/>
             <FaTwitter className='footer-icon'/>
             <FaInstagram className='footer-icon'/>
             
+            </div>
           </div>
           <div className="footer-items">
             <h3>Practice Area</h3><br/>
