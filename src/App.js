@@ -24,16 +24,25 @@ function App() {
         <Navbar/>
           <Helmet>
             <title>VERY COOL LAW FIRM WEBSITE</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web3 developer beginner, blog posts about learning web3 development, cryptocurrency researches, NFTs, metaverse. Personal portfolio website. Building single page applications with React, NodeJS, NestJS, MongoDB, Express, Javascript, TypeScript."/>
-
-    <meta name="title" content="BlackH3art.dev"/>
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://blackh3art.dev/"/>
-    <meta property="og:title" content="BlackH3art.dev"/>
-    <meta property="og:description" content="Web3 developer beginner, blog posts about learning web3 development, cryptocurrency researches, NFTs, metaverse. Personal portfolio website. Building single page applications with React, NodeJS, NestJS, MongoDB, Express, Javascript, TypeScript."/>
-    <meta property="og:image" content="https://blackh3art.dev/assets/1200x628logo.jpg"/>
+            <title>{title}</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" key="description" content="woooow" />
+      <meta name="title" key="title" content={title} />
+      <meta property="og:title" key="og:title" content={title} />
+      <meta property="og:locale" key="og:locale" content="en_US" />
+      <meta charSet="utf-8" />
+      <meta property="og:type" key="og:type" content="website" />
+      <meta
+        property="og:description"
+        key="og:description"
+        content="woooow"
+      />
+      <meta
+        property="og:image"
+        key="og:image"
+        content="https://images.squarespace-cdn.com/content/v1/602334ccc83cc72486df6be3/1613162047924-M4ZJZ3N7HCMH4HXSUJ68/TMLF-0101+Brand+Identity_LOGO-black.png"
+      />  
           </Helmet>
           <Routes>
             <Route path='/' element={<Home/>} />
