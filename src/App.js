@@ -24,7 +24,7 @@ function App() {
         <Navbar/>
           <Helmet>
             <title>VERY COOL LAW FIRM WEBSITE</title>
-            <title>{title}</title>
+            
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="description" key="description" content="woooow" />
