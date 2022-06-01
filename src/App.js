@@ -24,15 +24,16 @@ function App() {
         <Navbar/>
           <Helmet>
             <title>VERY COOL LAW FIRM WEBSITE</title>
-            <meta 
-            name="description"
-            content='wow'
-            />
-<meta name="title" property="og:title" content="TEST"> TEST</meta>
-<meta property='og:title' content='Title of the article'/>
-<meta property='og:image' content='./Media/lawyer_women.png'/>
-<meta property='og:description' content='Description that will show in the preview'/>
-<meta property='og:url' content='https://law-website-eight.vercel.app/'/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web3 developer beginner, blog posts about learning web3 development, cryptocurrency researches, NFTs, metaverse. Personal portfolio website. Building single page applications with React, NodeJS, NestJS, MongoDB, Express, Javascript, TypeScript."/>
+
+    <meta name="title" content="BlackH3art.dev"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://blackh3art.dev/"/>
+    <meta property="og:title" content="BlackH3art.dev"/>
+    <meta property="og:description" content="Web3 developer beginner, blog posts about learning web3 development, cryptocurrency researches, NFTs, metaverse. Personal portfolio website. Building single page applications with React, NodeJS, NestJS, MongoDB, Express, Javascript, TypeScript."/>
+    <meta property="og:image" content="https://blackh3art.dev/assets/1200x628logo.jpg"/>
           </Helmet>
           <Routes>
             <Route path='/' element={<Home/>} />
